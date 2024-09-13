@@ -32,6 +32,10 @@
   background-color: #d3d3d3;
 }
 
+.issue-table tr:nth-child(even) .status {
+  background-color: #d3d3d3;
+}
+
 .view-button {
   background-color: #007bff;
   color: white;
@@ -47,15 +51,16 @@
 
 .status {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: -30px;
   font-size: 14px;
-  color: gray;
+  color: black;
+  border: none;
+  background-color: none;
 }
 
-.status:after {
-  content: " ▼";
+.status::after{
+  border: none;
 }
-
 .end-message {
   text-align: center;
   margin: 20px 0;
