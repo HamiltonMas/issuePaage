@@ -1,0 +1,66 @@
+.table-container {
+  width: 100%;
+  max-width: 98%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.issue-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.issue-table th,
+.issue-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.issue-table th {
+  background-color: #d3d3d3;
+  font-size: 14px;
+  color: #333;
+}
+
+.issue-table td {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.issue-table tr:nth-child(even) td {
+  background-color: #d3d3d3;
+}
+
+.view-button {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  background-color: #0056b3;
+}
+
+.status {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.status:after {
+  content: " ▼";
+}
+
+.end-message {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+  color: gray;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
