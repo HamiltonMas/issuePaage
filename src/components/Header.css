@@ -10,18 +10,22 @@
 .header-left {
   display: flex;
   align-items: center;
+  padding-top: 20px;
 }
 
+
 .fa-clock {
-  font-size: 30px; /* Increase size for visibility */
-  margin-right: 10px; /* Add space between icon and text */
-  color: gray; /* Icon color */
+  font-size: 30px;
+  margin-right: 10px;
+  color: gray;
   margin-bottom: 4px;
+  margin-left: 12px;
 }
 
 .header-text h2 {
   margin: 0;
   font-size: 18px;
+  color: gray;
 }
 
 .header-text p {
@@ -31,8 +35,16 @@
 }
 
 .header-right {
-  display: flex;
-  align-items: center;
+  margin-left: 1620px;
+  margin-top: -155px;
+}
+
+.header-right .filter-button {
+  margin-top: 200px;
+}
+
+.header-right .sort-button {
+  margin-top: 200px;
 }
 
 .search-input {
@@ -81,5 +93,54 @@ button:hover {
 }
 
 button i:hover {
+  color: black;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: gray;
+}
+
+.header-text h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.filter-button,
+.sort-button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.filter-button i,
+.sort-button i {
+  margin-right: 5px;
+}
+
+.filter-button:hover,
+.sort-button:hover {
   color: black;
 }
