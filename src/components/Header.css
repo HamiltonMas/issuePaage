@@ -13,7 +13,6 @@
   padding-top: 20px;
 }
 
-
 .fa-clock {
   font-size: 30px;
   margin-right: 10px;
@@ -35,7 +34,7 @@
 }
 
 .header-right {
-  margin-left: 1620px;
+  margin-left: 1000px;
   margin-top: -155px;
 }
 
@@ -47,26 +46,35 @@
   margin-top: 200px;
 }
 
-.search-input {
-  padding: 5px 10px;
-  border: 1px solid #2addf1;
-  border-radius: 15px;
-  outline: none;
+.search-button {
+  padding: 10px;
+  padding-bottom: 80px;
+  margin-left: -50px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .search-icon {
+  color: gray;
   margin-left: -25px;
-  color: lightblue;
 }
-
 /* Filter and Sort Button Styling */
 .filter-sort-container {
   display: flex;
   gap: 20px; /* Space between Filter and Sort buttons */
   align-items: center;
-  margin-left: -140px; /* Add some space between search and buttons */
+  margin-left: -90px;
 }
 
+.search-input {
+  padding: 5px 10px;
+  border: 1px solid #2addf1;
+  border-radius: 15px;
+  outline: none;
+  margin-left: -40px;
+}
 .filter-sort-container button {
   margin-top: 70px;
 }
@@ -125,14 +133,50 @@ button i:hover {
 
 .filter-button,
 .sort-button {
-  background-color: transparent;
-  border: none;
+  padding: 10px 20px;
   font-size: 16px;
-  color: gray;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-dropdown-container,
+.sort-dropdown-container {
+  position: relative;
+}
+
+.filter-options,
+.sort-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  z-index: 1;
+}
+
+.filter-option,
+.sort-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filter-sort-container {
   display: flex;
   align-items: center;
+}
+
+.filter-dropdown-container,
+.sort-dropdown-container {
+  position: relative;
+  margin-left: 10px;
+}
+
+.filter-button,
+.sort-button {
+  padding: 10px;
+  background-color: #f2f2f2;
   cursor: pointer;
-  margin-left: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .filter-button i,
@@ -140,7 +184,87 @@ button i:hover {
   margin-right: 5px;
 }
 
-.filter-button:hover,
-.sort-button:hover {
-  color: black;
+.filter-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sort-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-options div,
+.sort-options div {
+  margin-bottom: 10px;
+}
+
+.filter-options label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter-options input,
+.filter-options select {
+  width: 93%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-options button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.filter-options button:hover {
+  background-color: #0056b3;
+}
+
+.sort-options div {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.sort-options div:hover {
+  background-color: #f1f1f1;
+}
+
+.sort-options div.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.search-container,
+.filter-container,
+.sort-container {
+  display: flex;
+  align-items: center;
 }
