@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Table from "./components/Table";
-import Header from "./components/Header";
 
 function App() {
+  const [sortConfig] = useState({ key: null, direction: null });
+
   return (
     <div className="App">
-      <Header />
-      <Table />
+      {/* Pass sortConfig to Table */}
+      <Table sortConfig={sortConfig} />
     </div>
   );
 }
